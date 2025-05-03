@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Sitemaat - Uw Partner in Webontwikkeling</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+</head>
+<body>
+  <!-- Loading Screen -->
+  <div id="preloader">
+    <div class="loadingspinner">
+      <div id="square1"></div>
+      <div id="square2"></div>
+      <div id="square3"></div>
+      <div id="square4"></div>
+      <div id="square5"></div>
+    </div>
+  </div>
+
+  <header>
+    <div class="logo">
+      <span class="logo-icon"><img class="logo-icon" src="logo.png" alt="SiteMaat"></span>
+    </div>
+    <div id="cart-animation" class="cart-animation" style="display: none;">✔️</div>
+    <div id="cart-icon">🛒 <span id="cart-count">0</span></div>
+ 
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <img class="banner" src="banner.png" alt="Banner SiteMaat">
+      <button  onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });" class="button1" id="button2">Neem contact op</button>
+    </div>
+  </section>
+
+
+  <section class="features">
+    <h2>Onze Diensten</h2>
+    <div class="features-grid">
+      <div class="feature-card">
+        <span class="feature-icon">💻</span>
+        <h3>Webdesign</h3>
+        <p>Moderne en responsieve websites op maat</p>
+      </div>
+      <div class="feature-card">
+        <span class="feature-icon">🛠️</span>
+        <h3>Ontwikkeling</h3>
+        <p>Krachtige web-applicaties</p>
+      </div>
+      <div class="feature-card">
+        <span class="feature-icon">📱</span>
+        <h3>Mobile Apps</h3>
+        <p>Native en hybride apps</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="products">
+    <h2>Onze Producten</h2>
+    <div id="products" class="products-grid"></div>
+  </section>
+
+  <section class="offers">
+    <h2>Speciale Aanbiedingen</h2>
+    <div class="offers-grid">
+      <div class="offer-card">
+        <h3>Starterspakket</h3>
+        <p class="price">€499</p>
+        <ul>
+          <li>Basis Website</li>
+          <li>5 Pagina's</li>
+          <li>SEO Optimalisatie</li>
+        </ul>
+        <button class="button1">Bekijk Aanbieding</button>
+      </div>
+      <div class="offer-card featured">
+        <h3>Professional</h3>
+        <p class="price">€999</p>
+        <ul>
+          <li>Premium Website</li>
+          <li>10 Pagina's</li>
+          <li>SEO Optimalisatie</li>
+          <li>E-commerce Integratie</li>
+        </ul>
+        <button class="button1">Bekijk Aanbieding</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials">
+    <h2>Wat Klanten Zeggen</h2>
+    <div class="swiper testimonials-swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="testimonial-card">
+            <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=John" alt="Klant foto" class="testimonial-image">
+            <p>"Sitemaat heeft onze online aanwezigheid compleet getransformeerd!"</p>
+            <h4>Jan Jansen</h4>
+            <p class="company">Tech Solutions BV</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="testimonial-card">
+            <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Lisa" alt="Klant foto" class="testimonial-image">
+            <p>"Professioneel, snel en zeer klantvriendelijk."</p>
+            <h4>Lisa de Vries</h4>
+            <p class="company">Fashion Store</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+  
+<section class="contact-section">
+  <div class="contact-intro">
+    <h2 class="contact-title">Get in Touch</h2>
+    <p class="contact-description">
+      Fill out the form below and we'll get back to you as soon as possible.
+    </p>
+  </div>
+
+  <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+
+    <!-- Web3Forms Access Key -->
+    <input type="hidden" name="access_key" value="421a0f7d-90e1-4439-b002-f5acea3375c4" />
+    
+    <!-- Custom Subject (optional) -->
+    <input type="hidden" name="subject" value="New Contact Form Submission from Web3Forms" />
+    
+    <!-- Custom Sender Name (optional) -->
+    <input type="hidden" name="from_name" value="My Website" />
+
+    <div class="form-group-container">
+      <!-- Name Field -->
+      <div class="form-group">
+        <label for="name" class="form-label">Name</label>
+        <input id="name" name="name" class="form-input" placeholder="Your name" type="text" required />
+      </div>
+
+      <!-- Email Field -->
+      <div class="form-group">
+        <label for="email" class="form-label">Email</label>
+        <input id="email" name="email" class="form-input" placeholder="Your email" type="email" required />
+      </div>
+
+      <!-- Phone Field -->
+      <div class="form-group">
+        <label for="phone" class="form-label">Phone</label>
+        <input id="phone" name="phone" class="form-input" placeholder="+1 (234) 56789" type="text" />
+      </div>
+
+      <!-- Message Field -->
+      <div class="form-group">
+        <label for="message" class="form-label">Message</label>
+        <textarea class="form-textarea" id="message" name="message" placeholder="Your message" required></textarea>
+      </div>
+    </div>
+
+    <!-- Submit Button -->
+    <button class="form-submit" type="submit">Send Message</button>
+  </form>
+</section>
+
+
+  <div id="cart-sidebar" class="cart-sidebar">
+    <div class="cart-header">
+      <h2>Winkelwagen</h2>
+      <button class="close-cart" onclick="closeCart()">×</button>
+    </div>
+    <div id="cart-items" class="cart-items"></div>
+    <div class="cart-total">
+      <div id="cart-total">Totaal: €0</div>
+      <button onclick="checkout()" class="offer-button" style="width: 100%; margin-top: 10px;">Afrekenen</button>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Sitemaat</h3>
+        <p>Uw partner in digitale oplossingen</p>
+      </div>
+      <div class="footer-section">
+        <h3>Links</h3>
+        <a href="#products">Producten</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Sitemaat. Alle rechten voorbehouden.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
